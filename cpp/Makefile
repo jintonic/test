@@ -24,3 +24,6 @@ clean:
 echo:
 	@echo $(MAKEFILE_LIST)
 	@echo $(CC)
+
+size: size.C
+	g++ size.C -o size
