@@ -58,4 +58,14 @@
       <<c1->GetRightMargin()<<" \t"
       <<c1->GetTopMargin()<<endl;
 
- }
+   TList *pads = c1->GetListOfPrimitives();
+   TIter next(pads);
+   TObject *obj=0;
+   Int_t it=0;
+   while ((obj=next())) {
+      it++;
+      cout<<"hist in pad "<<it<<" is "<<((TH1*) ((TPad*) obj)->GetListOfPrimitives()->First())->GetName()<<endl;
+      //cout<<"hist in pad "<<it<<" is "<<obj->GetName()<<endl;
+   }
+
+}
