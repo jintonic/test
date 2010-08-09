@@ -15,6 +15,7 @@ int main()
   cout<<"size of float: "<<sizeof(float)<<endl;
   cout<<"size of double: "<<sizeof(double)<<endl;
   cout<<"size of timeval: "<<sizeof(timeval)<<endl;
+  cout<<"size of long long: "<<sizeof(long long)<<endl;
 
   return 0;
 }
