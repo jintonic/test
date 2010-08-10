@@ -34,6 +34,7 @@ typedef struct sort_buffer_header {
 int main()
 {
   cout<<"size of bufhead: "<<sizeof(BUFHEAD)<<endl;
+  cout<<"size of acq_time: "<<sizeof(acq_time)<<endl;
   cout<<"size of char: "<<sizeof(char)<<endl;
   cout<<"size of short: "<<sizeof(short)<<endl;
   cout<<"size of u_short: "<<sizeof(u_short)<<endl;
